@@ -146,3 +146,12 @@ menu-mobile.showmenu{
     top: 0;
     left: 0;
 }
+
+.link-footer{
+    padding: 8px 8px 8px 8px;
+    transition: .5s ease;
+
+    &:hover{
+        padding: 8px 8px 8px 16px;
+    }
+}

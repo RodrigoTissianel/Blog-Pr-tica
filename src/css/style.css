@@ -1986,6 +1986,16 @@ menu-mobile.showmenu {
   left: 0;
 }
 
+.link-footer {
+  padding: 8px 8px 8px 8px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.link-footer:hover {
+  padding: 8px 8px 8px 16px;
+}
+
 .icon {
   max-width: 64px;
   -webkit-transition: .5s ease;
