@@ -49,6 +49,10 @@ input, select, option, textarea{
     @include typeface-2 (p3, desktop);
 }
 
+textarea{
+    resize: none;
+}
+
 .btn-search{
     cursor: pointer;
     width: 56px;

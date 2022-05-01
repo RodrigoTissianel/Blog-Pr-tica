@@ -2127,6 +2127,10 @@ input, select, option, textarea {
   font-weight: 200;
 }
 
+textarea {
+  resize: none;
+}
+
 .btn-search {
   cursor: pointer;
   width: 56px;
