@@ -5,6 +5,9 @@ import logoBlog from 'svg/blog.svg';
 import Header from "pages/Header";
 import Footer from "pages/Footer";
 
+//Link
+import {Link} from 'react-router-dom';
+
 const About = ()=>{
     return(
         <>
@@ -16,7 +19,7 @@ const About = ()=>{
                         <h1 className="h0">blog <span>.</span> </h1>
                         <p className="mt-1">Este projeto foi desenvolvido com o intuito de fixar os conhecimentos em React JS adquiridos no curso FrontPush.
                         É um projeto que faz uso dos Hooks, API com axios e Json-server, React Router DOM, SASS, CSS, HTML e JavaScript.</p>
-                        <a href="#" className="btn mt-4">Começar a escrever</a>
+                        <Link to="/Login" className="btn mt-4">Começar a escrever</Link>
                     </div>
 
                     <div className="grid-6">

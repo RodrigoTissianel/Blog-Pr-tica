@@ -5,6 +5,8 @@ import logo from 'svg/blog-logo2.svg';
 import Header from 'pages/Header';
 import Footer from 'pages/Footer';
 
+//Link
+import { Link } from 'react-router-dom';
 
 const NotFound = ()=>{
     return(
@@ -25,7 +27,7 @@ const NotFound = ()=>{
                     <h1 className='h0 color-primary'>404</h1> 
                     <h5>Página não encontrada!</h5>
                     <p className='mt-2'>A página que você tá procurando não existe ou foi removida. Clique para voltar para o site.</p>
-                    <a href="#" className='btn w-100 mt-3'>Voltar para a home</a>
+                    <Link to="/" className='btn w-100 mt-3'>Voltar para a home</Link>
                 </div>
 
                 <div className='grid-4 disappear'></div>

@@ -22,7 +22,7 @@ const Paths = ()=>{
                 <Route path='/Login' element={<Login/>}></Route>
                 <Route path='*' element={<NotFound/>}></Route>
 
-                <Route path='/Post:idPost' element={<Post/>}></Route>
+                <Route path='/Post/:idPost' element={<Post/>}></Route>
                 
                 <Route path='/Profile' element={<Profile/>}></Route>
                 <Route path='/Search' element={<Search/>}></Route>

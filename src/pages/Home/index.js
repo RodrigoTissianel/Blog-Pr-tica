@@ -38,10 +38,7 @@ const Home = ()=>{
         .then((response)=>{
             setBanner(response.data);
         })
-    }, [])
-
-
-
+    }, []);
 
 
     return(
@@ -101,6 +98,6 @@ const Home = ()=>{
             <Footer></Footer>
         </>
     );
-}
+};
 
 export default Home;

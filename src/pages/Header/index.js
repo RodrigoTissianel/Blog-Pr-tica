@@ -1,20 +1,23 @@
 //Imagens
 import logo from 'svg/blog-logo.svg';
 
+//Link
+import { Link } from 'react-router-dom';
+
 const Header = () =>{
     return(
         <>
         <header className="bb-black px-2">
             <nav>
                 <div className='logo'>
-                    <a href="#"> <img src={logo} alt="Logo do blog"></img></a>
+                    <Link to="/"> <img src={logo} alt="Logo do blog"></img></Link>
                 </div>
 
                 
                     <ul className='menu'>
-                        <li className='ml-3'> <a href="#">Sobre</a> </li>
-                        <li className='ml-3'> <a href="#">Contato</a> </li>
-                        <li className='ml-3'> <a href="#">Perfil</a> </li>
+                        <li className='ml-3'> <Link to="/About">Sobre</Link> </li>
+                        <li className='ml-3'> <Link to="/Contact">Contato</Link> </li>
+                        <li className='ml-3'> <Link to="/Profile">Perfil</Link> </li>
                     </ul>
                 </nav>
             
@@ -31,10 +34,10 @@ const Header = () =>{
                 
 
                 <div className='cta-desktop ml-3'>
-                    <a href="#" className='btn'>Login</a>
+                    <Link to="/Login" className='btn'>Login</Link>
                 </div>
                 <div className='cta-mobile'>
-                    <a href="#" className='color-primary'>Login</a>
+                    <Link to="/Login" className='color-primary'>Login</Link>
                 </div>
             </div>
         </header>
@@ -42,9 +45,9 @@ const Header = () =>{
         <div className='relative'>
             <div className='menu-mobile'>
                 <ul className='nav-mobile'>
-                    <li> <a href="#" className='link-menu-mobile'>Sobre</a> </li>
-                    <li> <a href="#" className='link-menu-mobile'>Contato</a> </li>
-                    <li> <a href="#" className='link-menu-mobile'>Perfil</a> </li>
+                    <li> <Link to="/About" className='link-menu-mobile'>Sobre</Link> </li>
+                    <li> <Link to="/Contact" className='link-menu-mobile'>Contato</Link> </li>
+                    <li> <Link to="/Profile" className='link-menu-mobile'>Perfil</Link> </li>
                     <li className='px-2 py-2'>
                         <form className='flex '>
                             <input type="text" name='search' placeholder='Buscar'></input>
