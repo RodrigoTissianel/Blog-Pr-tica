@@ -48,6 +48,9 @@ input, select, option, textarea{
     border-radius: 4px;
     @include typeface-2 (p3, desktop);
 }
+select, option{
+    height: 48px;
+}
 
 textarea{
     resize: none;

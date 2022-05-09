@@ -25,7 +25,7 @@ const Paths = ()=>{
                 <Route path='/Post/:idPost' element={<Post/>}></Route>
                 
                 <Route path='/Profile' element={<Profile/>}></Route>
-                <Route path='/Search' element={<Search/>}></Route>
+                <Route path='/Search/:word_search' element={<Search/>}></Route>
             </Routes>
         </BrowserRouter>
         
